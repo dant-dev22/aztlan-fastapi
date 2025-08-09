@@ -1,16 +1,16 @@
-# app/database.py
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
+# # app/database.py
+# from sqlalchemy import create_engine
+# from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "postgresql://localhost/aztlan_db"  # Cambia si tienes usuario/contraseña
+# DATABASE_URL = "postgresql://localhost/aztlan_db"  # Cambia si tienes usuario/contraseña
 
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
+# engine = create_engine(DATABASE_URL)
+# SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+# Base = declarative_base()
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+# def get_db():
+#     db = SessionLocal()
+#     try:
+#         yield db
+#     finally:
+#         db.close()
