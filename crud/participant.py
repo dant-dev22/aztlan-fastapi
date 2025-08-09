@@ -1,8 +1,8 @@
 import random
 from sqlalchemy.orm import Session
-from app.models.participant import Participant
-from app.schemas.participant import ParticipantBase
-from app.config import AWS_ACCESS_KEY_ID, S3_BUCKET_NAME, AWS_SECRET_ACCESS_KEY, AWS_REGION
+from models.participant import Participant
+from schemas.participant import ParticipantBase
+from config import AWS_ACCESS_KEY_ID, S3_BUCKET_NAME, AWS_SECRET_ACCESS_KEY, AWS_REGION
 from fastapi import UploadFile
 import boto3 
 import uuid

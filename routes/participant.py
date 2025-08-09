@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
 from typing import List
-from app.schemas.participant import ParticipantBase, ParticipantOut, PaymentProofUpdate
+from schemas.participant import ParticipantBase, ParticipantOut, PaymentProofUpdate
 # from app.database import get_db  # función que devuelve la sesión de DB
-from app.crud import participant as crud_participant
+from crud import participant as crud_participant
 
 router = APIRouter(prefix="/participants")
 
